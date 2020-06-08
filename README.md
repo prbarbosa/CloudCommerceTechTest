@@ -28,8 +28,6 @@ I used the following OOP principles in my code:
 
 * unit tests (I have the free version of Visual Studio 2019 and I cannot use Code Coverage feature)
 
-* I did not use any polymorphism, I found no scenario in this application to do so.
-
 > Feel free to use a library or framework, e.g. to help handle the interaction with the command line.
 
 I did not use a library for the commandline, but I did use 3rd party libraries for other stuff.
