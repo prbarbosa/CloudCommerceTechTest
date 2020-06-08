@@ -8,6 +8,7 @@ I'm going to quote some of the requirements on the technical test that I've rece
 Done. Just run the application with 
 
 CloudCommerceTechTest.exe csvtojson Resources/source.csv
+
 CloudCommerceTechTest.exe csvtoxml Resources/source.csv
 
 I provide a csv file under Resources, but you can use your own. 
@@ -18,11 +19,16 @@ Output will be displayed on screen, file will be saved in bin/debug directory
 > The idea is to show off your knowledge of C# and OOP principles, rather than to do it as quickly as possible.
 
 I used the following OOP principles in my code:
-abstract class
-virtual, override, overload
-inheritance
-unit tests
-I did not use any polymorphism, I found no scenario in this application to do so.
+
+* abstract class
+
+* virtual, override, overload
+
+* inheritance
+
+* unit tests
+
+* I did not use any polymorphism, I found no scenario in this application to do so.
 
 > Feel free to use a library or framework, e.g. to help handle the interaction with the command line.
 
