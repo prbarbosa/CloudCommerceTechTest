@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CloudCommerceTechTest.HelperClasses;
+using Newtonsoft.Json;
 
 namespace CloudCommerceTechTest.Classes
 {
@@ -13,7 +14,10 @@ namespace CloudCommerceTechTest.Classes
         {
             LoadIntoClass();
 
-            string endResult = JsonConvert.SerializeObject(dataInClasses, Formatting.Indented).Replace("\"", string.Empty).Replace("'", string.Empty);
+            var settings = new JsonSerializerSettings();
+            settings.ContractResolver = new LowercaseContractResolver();
+
+            string endResult = JsonConvert.SerializeObject(dataInClasses, Formatting.Indented, settings).Replace("\"", string.Empty).Replace("'", string.Empty);
 
             SaveFile(endResult);
         }

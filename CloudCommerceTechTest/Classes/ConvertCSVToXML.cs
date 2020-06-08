@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Xml;
+using System.Xml.Linq;
 using System.Xml.Serialization;
 
 namespace CloudCommerceTechTest.Classes
@@ -34,8 +36,20 @@ namespace CloudCommerceTechTest.Classes
                     throw e;
                 }
             }
+            //we need to lowercase nodes
+            XElement doc = XElement.Parse(xml);
 
-            SaveFile(xml.ToString());
+            foreach (var element in doc.Elements())
+            {
+                element.Name = element.Name.LocalName.ToLower();
+
+                foreach (var innerelement in doc.Descendants().Elements())
+                {
+                    innerelement.Name = innerelement.Name.LocalName.ToLower();
+                }
+            }
+
+            SaveFile(doc.ToString());
         }
     }
 }

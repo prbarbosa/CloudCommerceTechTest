@@ -66,6 +66,7 @@
     <Compile Include="Classes\ConvertDBToCSV.cs" />
     <Compile Include="Classes\ConvertJSONToCSV.cs" />
     <Compile Include="Classes\ConvertXMLToCSV.cs" />
+    <Compile Include="HelperClasses\JsonHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
