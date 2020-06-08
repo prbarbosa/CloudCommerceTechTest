@@ -3,3 +3,7 @@
 ################################################################################
 
 /CloudCommerceTechTest/bin/Debug
+/CloudCommerceTechTest/obj/Debug
+/CloudCommerceTechTest.BL/bin/Debug
+/CloudCommerceTechTest.BL/obj/Debug
+/CloudCommerceTechTest.Tests/obj/Debug
