@@ -26,7 +26,7 @@ I used the following OOP principles in my code:
 
 * inheritance
 
-* unit tests
+* unit tests (I have the free version of Visual Studio 2019 and I cannot use Code Coverage feature)
 
 * I did not use any polymorphism, I found no scenario in this application to do so.
 
